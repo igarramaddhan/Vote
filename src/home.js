@@ -46,7 +46,8 @@ class home extends Component{
                                 this.calon1Ref.set(snapshot.val()+1);
                             }),
                             this.nimRef.push({'nim':params.NIM, 'pilihan': 'calon1'})
-                            Alert.alert('Pemberitahuan', text='Thanks for voting')                                
+                            Alert.alert('Pemberitahuan', text='Thanks for voting')
+                            navigate('Login')                                
                         }}>
                             <View style={{justifyContent:'center', alignItems:'center', backgroundColor: '#1abc9c', width:100,height:50}}>
                                 <Text style={{color: 'white',fontSize:20,fontWeight:'bold'}}>VOTE</Text>
@@ -63,6 +64,7 @@ class home extends Component{
                             }),
                             this.nimRef.push({'nim':params.NIM, 'pilihan': 'calon2'})
                             Alert.alert('Pemberitahuan', text='Thanks for voting')
+                            navigate('Login')
                         }}>
                             <View style={{justifyContent:'center', alignItems:'center', backgroundColor: '#1abc9c', width:100,height:50}}>
                                 <Text style={{color: 'white',fontSize:20,fontWeight:'bold'}}>VOTE</Text>
